@@ -1,0 +1,127 @@
+
+/* Global Styles */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2d3e50;
+}
+
+/* Card Styles */
+.constituency-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.constituency-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* Modal Design */
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-header {
+    background-color: #28a745;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-body {
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+/* Animated Winner Information */
+.winner-info {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 20px;
+    border-radius: 8px;
+    animation: highlightWinner 1s ease-in-out infinite alternate;
+}
+
+@keyframes highlightWinner {
+    0% {
+        background-color: #e8f5e9; /* Light green */
+    }
+    100% {
+        background-color: #81c784; /* Medium green */
+    }
+}
+
+/* Custom Red for No Election */
+.no-election {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: highlightNoElection 1s ease-in-out infinite alternate;
+}
+
+@keyframes highlightNoElection {
+    0% {
+        background-color: #f8d7da; /* Light red */
+    }
+    100% {
+        background-color: #f28e8e; /* Medium red */
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+}

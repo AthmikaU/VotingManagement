@@ -1,0 +1,52 @@
+
+/* Center the buttons on the page */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.btn-custom {
+    width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-green {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+.alert {
+    width: 80%;
+    max-width: 600px;
+    margin: 15px auto;
+}

@@ -1,0 +1,170 @@
+/* General layout for the profile page */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Styling for the profile image */
+.profile-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Information container below the profile image */
+.info-container {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for the editable fields */
+.editable-field {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Default input fields for address and phone */
+.editable-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 5px;
+    display: none;
+    width: 70%;
+}
+
+/* Styling for save and cancel buttons */
+.save-button, .cancel-button {
+    display: none;
+    margin-left: 10px;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #ffd700;
+}
+
+.navbar form button {
+    background-color: #dc3545;
+    border: none;
+}
+
+/* Button styles */
+.btn-primary, .btn-warning, .btn-danger {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+/* Modal styling */
+.modal-header {
+    background-color: #ffc107;
+    color: white;
+}
+
+.modal-footer {
+    border-top: 1px solid #ccc;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the edit profile page */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Styling the profile update success/error messages */
+.alert {
+    margin-top: 15px;
+    font-size: 16px;
+}

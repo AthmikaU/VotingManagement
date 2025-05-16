@@ -1,0 +1,127 @@
+/* General page layout */
+body {
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #ffd700;
+}
+
+.navbar form button {
+    background-color: #dc3545;
+    border: none;
+}
+
+/* Profile section layout */
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.profile-details strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Edit profile button styling */
+.btn-edit-profile {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit-profile:hover {
+    background-color: #0056b3;
+}
+
+/* Vote button styling */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Styling for the Welcome message */
+h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container img {
+        margin-bottom: 1rem;
+    }
+
+    .profile-details {
+        align-items: center;
+    }
+
+    .profile-details p {
+        font-size: 14px;
+    }
+
+    .btn-edit-profile, .btn-success {
+        width: 100%;
+        padding: 12px;
+    }
+}

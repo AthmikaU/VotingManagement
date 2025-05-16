@@ -1,0 +1,96 @@
+
+body {
+    background-color: #f0f4f7;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-card {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-card .nav-item {
+    width: 33%;
+    text-align: center;
+}
+
+.nav-pills .nav-link {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #0056b3;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.view-results-btn, .admin-btn {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.view-results-btn a, .admin-btn a {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-results-btn a:hover, .admin-btn a:hover {
+    background-color: #c0392b;
+}
+
+.alert-danger {
+    animation: slideIn 0.5s ease-in-out;
+}
+.admin-btn .btn, .modal .btn-primary {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn .btn:hover, .modal .btn-primary:hover {
+    background-color: #c0392b;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
